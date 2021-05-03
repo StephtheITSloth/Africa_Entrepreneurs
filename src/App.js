@@ -2,6 +2,7 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Link, Switch, Redirect } from 'react-router-dom';
+import {Container, Card, Jumbotron} from 'react-bootstrap';
 import GlobalStyle from './GlobalStyle'
 
 //Import react components
@@ -26,26 +27,28 @@ const App = () => {
 	
 	
 	return (
-		<>
-			<GlobalStyle />
-			<IconContext.Provider value={{ color: 'black' }}>
-				<Link to='/' />
+		<Jumbotron fluid>
+			<Container>
+				<GlobalStyle />
+				<IconContext.Provider value={{ color: 'black' }}>
+					<Link to='/' />
 
-				<body>
-					<Navbar />
+					<body>
+						<Navbar />
 
-					<Switch>
-						<Route path='/home' exact component={Home} />
-						<Route path='/about' exact component={About} />
-						<Route path='/business' exact component={BusinessPage} />
-						<Route path='/review' exact component={Review} />
-						<Route path='/signin' exact component={SignIn} />
-						<Route path='/contact' exact component={Contact} />
-					</Switch>
-					<Footer/>
-				</body>
-			</IconContext.Provider>
-		</>
+						<Switch>
+							<Route path='/home' exact component={Home} />
+							<Route path='/about' exact component={About} />
+							<Route path='/business' exact component={BusinessPage} />
+							<Route path='/review' exact component={Review} />
+							<Route path='/signin' exact component={SignIn} />
+							<Route path='/contact' exact component={Contact} />
+						</Switch>
+						<Footer />
+					</body>
+				</IconContext.Provider>
+			</Container>
+		</Jumbotron>
 	);
 };
 

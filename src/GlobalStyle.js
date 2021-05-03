@@ -6,7 +6,6 @@ const GlobalStyle = createGlobalStyle`
 	margin: 0;
 	padding: 0;
 	color:white;
-	height: 100%;
 	width: 100%;
 	
 	
@@ -16,22 +15,9 @@ body {
 	 background-image: url('https://i.imgur.com/8Q41eiB.jpg');
 	 background-repeat: no-repeat;
 	 background-position: center;
-	 background-size: cover;
-	 max-height: 100%;
 		text-align: center;
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		/* margin-bottom: 2px; */
 		height: 100%;
 		width: 100%;
-
-	@media screen and (min-width: 460px ){
-		height: 100%;
-		width: 100%;
-		background-size: 100% 100%;
-		background-position: center;
-	}
 
 	}
 
@@ -61,8 +47,6 @@ nav{
 ul{
 	font-size: 20px;
 	text-align: center;
-	display: flex;
-	justify-content: center;
 	list-style-type: none;
 	align-items: center;
 	

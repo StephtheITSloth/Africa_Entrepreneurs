@@ -2,19 +2,13 @@ import styled, { createGlobalStyle } from 'styled-components';
 // import img from './components/images/elephanthome.jpg';
 
 const GlobalStyle = createGlobalStyle`
-*{	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	color:white;
-	width: 100%;
-	
-	
-}
+
 
 body {
 	 background-image: url('https://i.imgur.com/8Q41eiB.jpg');
 	 background-repeat: no-repeat;
 	 background-position: center;
+	 color: white;
 		text-align: center;
 		height: 100%;
 		width: 100%;
@@ -45,7 +39,7 @@ nav{
 }
 
 ul{
-	font-size: 20px;
+	font-size: 30px;
 	text-align: center;
 	list-style-type: none;
 	align-items: center;
@@ -53,7 +47,7 @@ ul{
 }
 
 li{
-	font-size: 10px;
+	font-size: 20px;
 	padding: 5px;
 	display: inline;
 	cursor: pointer;

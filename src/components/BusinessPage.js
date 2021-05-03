@@ -45,8 +45,7 @@ const PostBusiness = () => {
 			})
 			.catch((err) => console.log(err));
 	}, []);
-	if (businesses == null) {
-		return null;
+	if (businesses == null) {return null;
 	}
 	return (
 		<div>
@@ -58,7 +57,6 @@ const PostBusiness = () => {
 							<ul>
 								<li>{business.business_name}</li>
 								<li>{business.business_year_in_operation}</li>
-
 								<li>{business.business_location}</li>
 							</ul>
 						</div>

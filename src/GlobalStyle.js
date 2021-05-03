@@ -5,7 +5,7 @@ const GlobalStyle = createGlobalStyle`
 *{	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	color:white;
+	color: white;
 	height: 100%;
 	width: 100%;
 	
@@ -16,14 +16,13 @@ body {
 	 background-image: url('https://i.imgur.com/8Q41eiB.jpg');
 	 background-repeat: no-repeat;
 	 background-position: center;
-	 background-size: cover;
-	 max-height: 100%;
+	 background-size: 120% ;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		/* margin-bottom: 2px; */
-		height: 100%;
+		height: 50%;
 		width: 100%;
 
 	@media screen and (min-width: 460px ){
@@ -40,7 +39,7 @@ button {
 	width: 40px;
 	margin-left: 5px;
 	margin-top: 40px;
-	color: black;
+	color: white;
 	padding: 2px;
 	border: none;
 	background: #d2a679;
@@ -49,8 +48,8 @@ button {
 }
 
 button:hover {
-	background: black;
-	color: white;
+	background: #d2a679;
+	color: black;
 }
 
 nav{

@@ -1,10 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, NavMenu, NavItem, NavBarMenu } from './NavbarStyle';
+import {
+	Nav,
+	NavMenu,
+	NavItem1,
+	NavItem2,
+	NavItem3,
+	NavItem4,
+	NavItem5,
+	NavItem6,
+	NavBarMenu,
+} from './NavbarStyle';
 import { IoMenu } from 'react-icons/io5';
 
 const Navbar = () => {
-	const [click, setClick] = useState(false);
+	const [click, setClick] = useState();
 
 	const handleClick = () => {
 		setClick(!click);
@@ -22,22 +32,22 @@ const Navbar = () => {
 				</button>
 				<NavMenu onClick={handleClick} click={click}>
 					<Link to='/home'>
-						<NavItem>Home</NavItem>
+						<NavItem1>Home</NavItem1>
 					</Link>
 					<Link to='/about'>
-						<NavItem>About</NavItem>
+						<NavItem2>About</NavItem2>
 					</Link>
 					<Link to='/business'>
-						<NavItem>Business</NavItem>
+						<NavItem3>Business</NavItem3>
 					</Link>
 					<Link to='/review'>
-						<NavItem>Review</NavItem>
+						<NavItem4>Reviews</NavItem4>
 					</Link>
 					<Link to='/account'>
-						<NavItem>Account</NavItem>
+						<NavItem5>Account</NavItem5>
 					</Link>
 					<Link to='/contact'>
-						<NavItem>Contact Us</NavItem>
+						<NavItem6>Contact</NavItem6>
 					</Link>
 				</NavMenu>
 			</Nav>

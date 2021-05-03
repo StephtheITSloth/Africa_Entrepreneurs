@@ -1,5 +1,8 @@
 //Import react dependencies
 import React, {useState} from 'react';
+import data from './data.json';
+import  { Breadcrumb } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import ReactDOM from 'react-dom';
 import { Route, Link, Switch, Redirect } from 'react-router-dom';
 import GlobalStyle from './GlobalStyle'
@@ -27,10 +30,10 @@ const App = () => {
 	
 	return (
 		<>
-			<GlobalStyle />
+			<GlobalStyle/>
 			<IconContext.Provider value={{ color: 'black' }}>
 				<Link to='/' />
-
+		
 				<body>
 					<Navbar />
 

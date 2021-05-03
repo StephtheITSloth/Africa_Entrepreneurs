@@ -51,8 +51,9 @@ const Navbar = () => {
 					</Link>
 				</NavMenu>
 			</Nav>
+
+
 		</>
 	);
 };
-
 export default Navbar;
